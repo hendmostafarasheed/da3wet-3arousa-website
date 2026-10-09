@@ -6,7 +6,7 @@ body[dir=ltr]{font-family:var(--serif)}body[dir=ltr] .hero-foot{left:auto;right:
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
 /* Uploaded invitation examples */
-.sample-image{height:350px;overflow:hidden;background:#eee7e0;border:1px solid #d8c7c5;box-shadow:0 12px 30px #35121d0a;transition:transform .25s;display:flex;align-items:center;justify-content:center}
-.sample-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#f8f3ed}
+.sample-image{height:clamp(350px,42vw,520px);overflow:hidden;background:#eee7e0;border:1px solid #d8c7c5;box-shadow:0 12px 30px #35121d0a;transition:transform .25s;display:flex;align-items:center;justify-content:center;cursor:zoom-in;padding:8px}
+.sample-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#f8f3ed}.sample-image.image-missing:after{content:"الصورة غير موجودة — ارفعي مجلد images كاملًا إلى GitHub";padding:20px;color:#70243a;text-align:center;font-size:13px}.sample-image.image-missing img{display:none}
 .logo{display:inline-flex;align-items:center;justify-content:center}
-@media(max-width:700px){.sample-image{height:300px}}
+@media(max-width:700px){.sample-image{height:440px}}
